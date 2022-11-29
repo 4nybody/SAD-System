@@ -1,7 +1,8 @@
 <?php
-
 include_once 'autoloader.php';
-$userInfo = getUserWithEmailAddress( $_POST['email'] );
+
+
+$userInfo = getUserWithEmailAddress( trim($_POST['email'] ) );
 
     if ( $_SESSION['user_info']['role'] == 1) {
       echo $userinfo["role"];

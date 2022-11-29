@@ -14,7 +14,7 @@ if( isset( $_GET['state'] ) && FB_APP_STATE == $_GET['state'] ) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Sign in & Sign up Form</title>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/loader.js"></script>
@@ -93,18 +93,7 @@ if( isset( $_GET['state'] ) && FB_APP_STATE == $_GET['state'] ) {
                             value="<?php echo $_POST['password']; ?>" required />
                     </div>
                     <input type="submit" id="signin_button" value="Login" name="signin" class="btn solid" />
-                    <p class="social-text">Or Sign in with social platforms</p>
-                    <div class="social-media">
-                        <a href="<?php echo getFacebookLoginUrl(); ?>" class="social-icon">
-                            <i class="fab fa-facebook-f"> </i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-google"></i>
-                        </a>
-                    </div>
+                    
                 </form>
                 <form id="signup_form" class="sign-up-form" method="post">
                     <h2 class="title">Sign up</h2>
@@ -128,18 +117,6 @@ if( isset( $_GET['state'] ) && FB_APP_STATE == $_GET['state'] ) {
                     </div>
                     <!-- <button type="submit" class="btn" id="signup_button" name="signup">Sign up</button> -->
                     <input type="submit" class="btn" id="signup_button" name="signup" value="Sign up" />
-                    <p class="social-text">Or Sign up with social platforms</p>
-                    <div class="social-media">
-                        <a href="<?php echo getFacebookLoginUrl(); ?>" class="social-icon">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class='social-icon'>
-                            <i class='fab fa-google'></i>
-                        </a>
-                    </div>
                 </form>
             </div>
         </div>
