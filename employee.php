@@ -7,17 +7,6 @@ if ( !isLoggedIn() ) {
 }
 ?>
 
-<!-- <h1>Hello Employee</h1> 
-<br>
-<img src="<?php $_SESSION['user_info']['picture']; ?>" alt="" width="90px" height="90px">
-  <ul>
-    <li>Full Name: <?php echo $_SESSION['user_info']['first_name']; ?></li>
-    <li>Email Address: <?php echo $_SESSION['user_info']['email'] ?></li>
-    <li>Gender: <?php echo $_SESSION['user_info']['gender']; ?></li>
-    <li>role: <?php echo $_SESSION['user_info']['role']; ?></li>
-    <li><a href="logout.php">Logout</a></li>
-  </ul> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,12 +75,13 @@ if ( !isLoggedIn() ) {
 
             <div>
                 <div class="adv-gallery__">
-                    <h3>Hello! <?php echo $_SESSION['user_info']['email']; ?></h3>
+                <h4 class="sample-header" >Hello! <?php echo $_SESSION['user_info']['email']; ?></h4>
                 </div>
             </div>
 
             <div>
                 <div class="adv-gallery__">
+                    <br>
                     <h2>Content Here!</h2>
                     <br>
                     <br>
